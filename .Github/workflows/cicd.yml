@@ -35,5 +35,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: hale-jobs-api
-          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+          publish-profile: ${{ secrets.AZURE_DEPLOY }}
           package: '*.jar'
