@@ -12,19 +12,19 @@ server:
 spring:
   datasource:
     #url: jdbc:mysql://localhost:3306/hale_db #change this to your database url
-    url: jdbc:mysql://aws.connect.psdb.cloud:3306/hale_db #change this to your database url
+    url: jdbc:sqlserver://187.188.105.90:1477;databaseName=AgoPlanogram #change this to your database url
     #password: Cotemar19 #change this to your database password 
     #username: GABRIEL #change this to your database username
-    password: pscale_pw_3s4hYQmfj0N4U0xe17vPjv4LLcYC5GMZVdYDuBsi5l #change this to your database password 
-    username: wpo202sgpn7f81vetb07 #change this to your database username
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Ago0102!* #change this to your database password 
+    username: UserLuisF #change this to your database username
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
   servlet:
     multipart: 
       max-file-size: 10MB
